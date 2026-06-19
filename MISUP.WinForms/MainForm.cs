@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using MISUP.Models.Entities;
+using MISUP.Models;
 
 namespace MISUP.WinForms
 {
@@ -34,6 +34,11 @@ namespace MISUP.WinForms
         {
             if (MessageBox.Show("Bạn muốn đăng xuất để đổi tài khoản khác?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Restart();
+        }
+
+        private void lblLogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

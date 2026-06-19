@@ -11,20 +11,136 @@
 
         private void InitializeComponent()
         {
-            this.pnlSidebar = new System.Windows.Forms.Panel(); this.btnLogout = new System.Windows.Forms.Button(); this.btnTaiKhoan = new System.Windows.Forms.Button(); this.btnSanPham = new System.Windows.Forms.Button(); this.lblLogo = new System.Windows.Forms.Label(); this.pnlTop = new System.Windows.Forms.Panel(); this.lblTitle = new System.Windows.Forms.Label(); this.pnlContent = new System.Windows.Forms.Panel();
-            this.pnlSidebar.SuspendLayout(); this.pnlTop.SuspendLayout(); this.SuspendLayout();
-
-            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(168))))); this.pnlSidebar.Controls.Add(this.btnTaiKhoan); this.pnlSidebar.Controls.Add(this.btnSanPham); this.pnlSidebar.Controls.Add(this.btnLogout); this.pnlSidebar.Controls.Add(this.lblLogo); this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left; this.pnlSidebar.Location = new System.Drawing.Point(0, 0); this.pnlSidebar.Name = "pnlSidebar"; this.pnlSidebar.Size = new System.Drawing.Size(220, 600);
-            this.lblLogo.Dock = System.Windows.Forms.DockStyle.Top; this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold); this.lblLogo.ForeColor = System.Drawing.Color.White; this.lblLogo.Location = new System.Drawing.Point(0, 0); this.lblLogo.Name = "lblLogo"; this.lblLogo.Size = new System.Drawing.Size(220, 100); this.lblLogo.Text = "MISUP\nCOSMETICS"; this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Top; this.btnSanPham.FlatAppearance.BorderSize = 0; this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold); this.btnSanPham.Location = new System.Drawing.Point(0, 100); this.btnSanPham.Name = "btnSanPham"; this.btnSanPham.Size = new System.Drawing.Size(220, 60); this.btnSanPham.Text = "  📦 Quản lý Sản phẩm"; this.btnSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft; this.btnSanPham.UseVisualStyleBackColor = true; this.btnSanPham.Cursor = System.Windows.Forms.Cursors.Hand; this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
-            this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top; this.btnTaiKhoan.FlatAppearance.BorderSize = 0; this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold); this.btnTaiKhoan.Location = new System.Drawing.Point(0, 160); this.btnTaiKhoan.Name = "btnTaiKhoan"; this.btnTaiKhoan.Size = new System.Drawing.Size(220, 60); this.btnTaiKhoan.Text = "  👥 Tài khoản"; this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft; this.btnTaiKhoan.UseVisualStyleBackColor = true;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom; this.btnLogout.FlatAppearance.BorderSize = 0; this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold); this.btnLogout.Location = new System.Drawing.Point(0, 540); this.btnLogout.Name = "btnLogout"; this.btnLogout.Size = new System.Drawing.Size(220, 60); this.btnLogout.Text = "  🔴 Đăng xuất"; this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft; this.btnLogout.UseVisualStyleBackColor = true; this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand; this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            this.pnlTop.BackColor = System.Drawing.Color.WhiteSmoke; this.pnlTop.Controls.Add(this.lblTitle); this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top; this.pnlTop.Location = new System.Drawing.Point(220, 0); this.pnlTop.Name = "pnlTop"; this.pnlTop.Size = new System.Drawing.Size(780, 60);
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill; this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold); this.lblTitle.ForeColor = System.Drawing.Color.DimGray; this.lblTitle.Location = new System.Drawing.Point(0, 0); this.lblTitle.Name = "lblTitle"; this.lblTitle.Size = new System.Drawing.Size(780, 60); this.lblTitle.Text = "TRANG CHỦ"; this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.pnlContent.BackColor = System.Drawing.Color.White; this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill; this.pnlContent.Location = new System.Drawing.Point(220, 60); this.pnlContent.Name = "pnlContent"; this.pnlContent.Size = new System.Drawing.Size(780, 540);
-
-            this.ClientSize = new System.Drawing.Size(1000, 600); this.Controls.Add(this.pnlContent); this.Controls.Add(this.pnlTop); this.Controls.Add(this.pnlSidebar); this.Name = "MainForm"; this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen; this.Text = "Hệ thống Quản lý MISUP";
-            this.pnlSidebar.ResumeLayout(false); this.pnlTop.ResumeLayout(false); this.ResumeLayout(false);
+            pnlSidebar = new Panel();
+            btnTaiKhoan = new Button();
+            btnSanPham = new Button();
+            btnLogout = new Button();
+            lblLogo = new Label();
+            pnlTop = new Panel();
+            lblTitle = new Label();
+            pnlContent = new Panel();
+            pnlSidebar.SuspendLayout();
+            pnlTop.SuspendLayout();
+            SuspendLayout();
+            // 
+            // pnlSidebar
+            // 
+            pnlSidebar.BackColor = Color.ForestGreen;
+            pnlSidebar.Controls.Add(btnTaiKhoan);
+            pnlSidebar.Controls.Add(btnSanPham);
+            pnlSidebar.Controls.Add(btnLogout);
+            pnlSidebar.Controls.Add(lblLogo);
+            pnlSidebar.Dock = DockStyle.Left;
+            pnlSidebar.Location = new Point(0, 0);
+            pnlSidebar.Name = "pnlSidebar";
+            pnlSidebar.Size = new Size(220, 600);
+            pnlSidebar.TabIndex = 2;
+            // 
+            // btnTaiKhoan
+            // 
+            btnTaiKhoan.Dock = DockStyle.Top;
+            btnTaiKhoan.FlatAppearance.BorderSize = 0;
+            btnTaiKhoan.FlatStyle = FlatStyle.Flat;
+            btnTaiKhoan.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnTaiKhoan.ForeColor = SystemColors.ActiveBorder;
+            btnTaiKhoan.Location = new Point(0, 160);
+            btnTaiKhoan.Name = "btnTaiKhoan";
+            btnTaiKhoan.Size = new Size(220, 60);
+            btnTaiKhoan.TabIndex = 0;
+            btnTaiKhoan.Text = "  👥 Tài khoản";
+            btnTaiKhoan.TextAlign = ContentAlignment.MiddleLeft;
+            btnTaiKhoan.UseVisualStyleBackColor = true;
+            // 
+            // btnSanPham
+            // 
+            btnSanPham.Cursor = Cursors.Hand;
+            btnSanPham.Dock = DockStyle.Top;
+            btnSanPham.FlatAppearance.BorderSize = 0;
+            btnSanPham.FlatStyle = FlatStyle.Flat;
+            btnSanPham.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnSanPham.ForeColor = SystemColors.ActiveBorder;
+            btnSanPham.Location = new Point(0, 100);
+            btnSanPham.Name = "btnSanPham";
+            btnSanPham.Size = new Size(220, 60);
+            btnSanPham.TabIndex = 1;
+            btnSanPham.Text = "  📦 Quản lý Sản phẩm";
+            btnSanPham.TextAlign = ContentAlignment.MiddleLeft;
+            btnSanPham.UseVisualStyleBackColor = true;
+            btnSanPham.Click += btnSanPham_Click;
+            // 
+            // btnLogout
+            // 
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.Dock = DockStyle.Bottom;
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnLogout.Location = new Point(0, 540);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(220, 60);
+            btnLogout.TabIndex = 2;
+            btnLogout.Text = "  🔴 Đăng xuất";
+            btnLogout.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
+            // 
+            // lblLogo
+            // 
+            lblLogo.Dock = DockStyle.Top;
+            lblLogo.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblLogo.ForeColor = Color.Gold;
+            lblLogo.Location = new Point(0, 0);
+            lblLogo.Name = "lblLogo";
+            lblLogo.Size = new Size(220, 100);
+            lblLogo.TabIndex = 3;
+            lblLogo.Text = "MISU\nMARKET";
+            lblLogo.TextAlign = ContentAlignment.MiddleCenter;
+            lblLogo.Click += lblLogo_Click;
+            // 
+            // pnlTop
+            // 
+            pnlTop.BackColor = Color.WhiteSmoke;
+            pnlTop.Controls.Add(lblTitle);
+            pnlTop.Dock = DockStyle.Top;
+            pnlTop.Location = new Point(220, 0);
+            pnlTop.Name = "pnlTop";
+            pnlTop.Size = new Size(780, 60);
+            pnlTop.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            lblTitle.BackColor = Color.Transparent;
+            lblTitle.Dock = DockStyle.Fill;
+            lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblTitle.ForeColor = Color.DimGray;
+            lblTitle.Location = new Point(0, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(780, 60);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "TRANG CHỦ";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnlContent
+            // 
+            pnlContent.BackColor = Color.White;
+            pnlContent.Dock = DockStyle.Fill;
+            pnlContent.Location = new Point(220, 60);
+            pnlContent.Name = "pnlContent";
+            pnlContent.Size = new Size(780, 540);
+            pnlContent.TabIndex = 0;
+            // 
+            // MainForm
+            // 
+            ClientSize = new Size(1000, 600);
+            Controls.Add(pnlContent);
+            Controls.Add(pnlTop);
+            Controls.Add(pnlSidebar);
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Hệ thống Quản lý MISUP";
+            pnlSidebar.ResumeLayout(false);
+            pnlTop.ResumeLayout(false);
+            ResumeLayout(false);
         }
     }
 }

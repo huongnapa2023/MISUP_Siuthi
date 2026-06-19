@@ -3,6 +3,10 @@ using MISUP.Models;
 using System;
 using Terminal.Gui;
 
+using Application = Terminal.Gui.Application;
+using Button = Terminal.Gui.Button;
+using Label = Terminal.Gui.Label;
+using MessageBox = Terminal.Gui.MessageBox;
 namespace MISUP.ConsoleApp
 {
     public class LoginDialog : Dialog

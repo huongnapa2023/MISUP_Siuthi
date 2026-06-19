@@ -10,6 +10,6 @@ namespace MISUP.DAL
     public static class DatabaseConnection
     {
         // LƯU Ý: Đổi 'ADMIN-PC' thành tên Server SQL của máy bạn nếu cần.
-        public static string ConnectionString { get; } = @"Server=ADMIN-PC;Database=QuanLyMISUP;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static string ConnectionString { get; } = @"Data Source=DESKTOP-FDHE1F5\SQLEXPRESS;Initial Catalog=QuanLyMISUP;Integrated Security=True;Trust Server Certificate=True;";
     }
 }

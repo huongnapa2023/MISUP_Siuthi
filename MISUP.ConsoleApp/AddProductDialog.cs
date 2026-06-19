@@ -1,12 +1,14 @@
 ﻿using MISUP.BLL.Services;
 using MISUP.Models;
-using MISUP.Models;
 using NStack;
 using System;
 using Terminal.Gui;
 // DÒNG QUAN TRỌNG NHẤT ĐỂ SỬA LỖI AMBIGUOUS:
 // Ép buộc C# hiểu "Application" là của Terminal.Gui
 using Application = Terminal.Gui.Application;
+using Button = Terminal.Gui.Button;
+using Label = Terminal.Gui.Label;
+
 
 namespace MISUP.ConsoleApp
 {
@@ -67,7 +69,7 @@ namespace MISUP.ConsoleApp
             }
             catch (Exception ex)
             {
-                MessageBox.ErrorQuery("Lỗi", ex.Message, "OK");
+                Terminal.Gui.MessageBox.ErrorQuery("Lỗi", ex.Message, "OK");
             }
         }
     }

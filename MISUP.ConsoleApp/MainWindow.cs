@@ -4,7 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using Terminal.Gui;
+using NStack;
 
+using Application = Terminal.Gui.Application;
+using Button = Terminal.Gui.Button;
+using Label = Terminal.Gui.Label;
+using MessageBox = Terminal.Gui.MessageBox;
+using ListView = Terminal.Gui.ListView;
+using MenuItem = Terminal.Gui.MenuItem;
 namespace MISUP.ConsoleApp
 {
     public class MainWindow

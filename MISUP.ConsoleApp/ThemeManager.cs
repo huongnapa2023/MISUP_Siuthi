@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terminal.Gui;
-
+using Application = Terminal.Gui.Application;
+using Color = Terminal.Gui.Color;
 namespace MISUP.ConsoleApp
 {
     public static class ThemeManager
